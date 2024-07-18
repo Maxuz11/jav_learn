@@ -4,11 +4,21 @@ public class Persona {
     private String name;
     private String lastname;
     private String rut;
+    private int ctaCard;
 
-    public Persona(String name, String lastname, String rut) {
+    public Persona(String name, String lastname, String rut,int ctaCard) {
         this.name = name;
         this.lastname = lastname;
         this.rut = rut;
+        this.ctaCard = ctaCard;
+    }
+
+    public int getCtaCard() {
+        return ctaCard;
+    }
+
+    public void setCtaCard(int ctaCard) {
+        this.ctaCard = ctaCard;
     }
 
     public String getName() {
